@@ -24,6 +24,9 @@ module.exports = {
       {
         test: /\.(ttf|eot)$/, loader: 'file'
       },
+      {
+        test: /bootstrap-sass\/assets\/javascripts\//, loader: 'imports?jQuery=jquery'
+      }
     ]
   }
 };

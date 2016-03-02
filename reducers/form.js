@@ -1,11 +1,9 @@
-import { combineReducers } from 'redux'
-
-const initialState = {
+const initialFormState = {
   partyName: 'Jones',
   partySize: 2
 }
 
-const form = (state=initialState, action) => {
+export default function form(state=initialFormState, action) {
   console.log(action)
   switch (action.type) {
     case 'UPDATE_PARTY_NAME':
@@ -22,9 +20,3 @@ const form = (state=initialState, action) => {
       return state
   }
 }
-
-const hosterApp = combineReducers({
-  form
-})
-
-export default hosterApp
