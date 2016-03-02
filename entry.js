@@ -1,4 +1,3 @@
-import './style.css'
 import Hoster from './hoster'
 import React from 'react'
 import { render } from 'react-dom'

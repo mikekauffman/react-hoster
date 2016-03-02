@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./entry.js",
+  entry: ["./entry.js", "bootstrap-loader"],
   output: {
     path: __dirname,
     filename: "bundle.js"
@@ -17,7 +17,13 @@ module.exports = {
           presets: ['react', 'es2015'],
           plugins: ["syntax-object-rest-spread", "transform-object-rest-spread"]
         }
-      }
+      },
+      {
+        test: /\.(woff2?|svg)$/, loader: 'url?limit=10000'
+      },
+      {
+        test: /\.(ttf|eot)$/, loader: 'file'
+      },
     ]
   }
 };
