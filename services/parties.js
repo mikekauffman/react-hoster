@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-fetch'
 
-const rootUrl = 'http://localhost:3000/'
+const rootUrl = 'https://express-hoster.herokuapp.com/'
 
 class Parties {
   create (name, size) {
