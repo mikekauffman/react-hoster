@@ -1,5 +1,5 @@
 const initialFormState = {
-  partyName: 'Jones',
+  partyName: null,
   partySize: 2
 }
 
